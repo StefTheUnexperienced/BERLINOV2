@@ -1,0 +1,133 @@
+
+.major-mono-display-regular {
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .righteous-regular {
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    font-family: "Righteous", serif;
+
+}
+
+
+.navdiv{
+    color: #ff0000;
+    font-size: 75%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    float: left;
+    text-align: center;
+    font-family: "Major Mono Display", serif;
+}
+
+.sidebar {
+    border-style: solid;
+    border-width: 2%;
+    border-color:black;
+    width: 250px;
+    background-color: #ececeb;
+}
+
+.sidebar nav ul {
+    padding-left: 2%;
+border-left-color: black;
+border-left-width: 2%;
+border-left-style: dashed;
+    margin-left: 10%;
+    margin-top: 20%;
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    font-family: "Major Mono Display", serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ff00ff ;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-family: "Righteous", serif;
+    color: #000000;
+    font-size: 2em;
+}
+
+.map-container {
+    flex: 1;
+    position: relative;
+}
+
+.map-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        min-height: calc(100vh - 250px);
+    }
+
+    .map-container {
+        height: 400px;
+    }
+}
+
+.here{
+    color: #00FFFF
+    !important;
+}

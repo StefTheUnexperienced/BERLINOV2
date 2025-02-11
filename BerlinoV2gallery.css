@@ -1,0 +1,242 @@
+
+.major-mono-display-regular {
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .righteous-regular {
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1{
+    font-family: "Major Mono Display", serif;
+
+}
+
+
+h2{
+    font-family: "Righteous", serif;
+}
+
+p{
+    font-family: "Righteous", serif;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ececeb;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            min-height: 100vh;
+        }
+
+
+
+        .navdiv{
+            color: #ff0000;
+            font-size: 75%;
+            margin-top: 1%;
+            margin-left: 1%;
+            margin-bottom: 5%;
+            float: left;
+            text-align: center;
+            font-family: "Major Mono Display", serif;
+        }
+
+        .sidebar {
+            border-style: solid;
+            border-width: 2%;
+            border-color:black;
+            width: 250px;
+            background-color: #ececeb;
+        }
+        
+        .sidebar nav ul {
+            padding-left: 2%;
+        border-left-color: black;
+        border-left-width: 2%;
+        border-left-style: dashed;
+            margin-left: 10%;
+            margin-top: 20%;
+            list-style: none;
+        }
+        
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+        
+        .sidebar nav ul li a {
+            font-family: "Major Mono Display", serif;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .sidebar nav ul li a:hover {
+            color: #ff00ff ;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 35px;
+            padding: 20px 0;
+        }
+
+        .card {
+            border-top-width: 2%;
+            border-right-width: 2%;
+            border-top-style: dotted;
+            border-right-style: dashed;
+            background: white;
+            /* Removed border radius for square corners */
+            /* Left-aligned shadow */
+            box-shadow: -5px 5px black;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: -6px 6px #ff00ff;
+            position: relative;
+        }
+
+        .card-image {
+            width: 100%;
+            /* Fixed aspect ratio using padding-bottom */
+            /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
+            /* or 4:3 aspect ratio */
+            /* padding-bottom: 75%; */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* This maintains aspect ratio and crops overflow */
+            /* Alternative options: */
+            /* object-fit: contain; */ /* Shows whole image with possible letterboxing */
+            /* object-fit: fill; */    /* Stretches image to fit */
+            object-position: center;   /* Centers the image when cropping */
+        }
+
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        .card-description {
+            color: #000000;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .footer {
+            border-top-style: dotted;
+            border-color: black;
+            border-top-width: 2%;
+            border-left-width: 0%;
+            font-family: "Righteous", serif;
+            background-color: #ececeb;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+
+
+
+
+        .here{
+            color: #00FFFF
+            !important;
+        }
+
+
+        /* From Uiverse.io by Cornerstone-04 */ 
+.cards3d {
+    perspective: 500px;
+  }
+  
+  .card3d {
+    width: 310px;
+    height: 310px;
+    background: #ececeb;
+    border: 2px solid #000000;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  .card3d:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  .card3d_title {
+    text-align: center;
+    font-family: "Major Mono Display", serif;
+    color: black;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 40%;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  
+  .card3d:hover .card_title {
+    transform: translateZ(50px);
+  }
+  
+  .img3d{
+    margin-left: 15%;
+    margin-top: 5%;
+    width:70%;
+    height: auto;
+  }
