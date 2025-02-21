@@ -40,15 +40,17 @@ p{
 
 
         .navdiv{
-            color: #ff0000;
-            font-size: 75%;
-            margin-top: 1%;
-            margin-left: 1%;
-            margin-bottom: 5%;
-            float: left;
-            text-align: center;
-            font-family: "Major Mono Display", serif;
-        }
+          border-color: black;
+          border-bottom-style:groove;
+          color: #ff0000 ;
+          font-size: 75%;
+          margin-top: 1%;
+          margin-left: 1%;
+          margin-bottom: 5%;
+          float: left;
+          text-align: center;
+          font-family: "Major Mono Display", serif;
+      }
 
         .sidebar {
             border-style: solid;
