@@ -143,5 +143,6 @@ border-left-style: dashed;
 .img{
     width: 75%;
     height: auto;
+    margin-bottom: 2%;
     border: 2px black dashed;
 }
